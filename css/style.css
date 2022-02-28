@@ -1,0 +1,105 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+/* 
+.selector-for-some-widget {
+    box-sizing: content-box;
+  } */
+
+body {
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(60deg, #010d18, #020916f5, #272f36, #041d24, #080b16);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+}
+
+.big_img {
+    transform: skew(-5deg, -5deg);
+}
+
+@keyframes change {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container h3 {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 100;
+    letter-spacing: 12px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.button {
+    border: 2px solid #256c38;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    padding: 10px;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.button h6 {
+    font-size: 1.2rem;
+    color: #256c38;
+}
+
+.button a {
+    text-decoration: none;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button::before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    right: 50%;
+    bottom: 0%;
+    opacity: 0;
+    content: "";
+    background-color: #adadad0c;
+}
+
+
+.button:hover::before {
+    transition: 0.5s all ease;
+    left: 0%;
+    right: 0%;
+    opacity: 1;
+    z-index: -1;
+}
+
