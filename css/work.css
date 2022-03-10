@@ -4,18 +4,16 @@
     box-sizing: border-box;
 }
 
-.container {
+/* .container {
     margin-top: 20px;
     margin-left: 0%!important;
-}
-
-.container .h6 {
+} */
+.h6 {
     font-size: 1.4rem;
     font-weight: 100;
     letter-spacing: 3px;
 }
-
-.container .h2 {
+.h2 {
     font-size: 6rem;
     font-weight: 100;
     letter-spacing: 4px;
